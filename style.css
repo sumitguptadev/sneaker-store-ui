@@ -1,0 +1,324 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.store{
+    width: 60%;
+    min-height: 100%;
+    
+    margin: auto;
+}
+
+h1{
+    font-style: italic;
+    color: rgb(255, 179, 0);
+    font-size: 60px;
+    text-align: center;
+    padding: 30px;
+}
+
+.shoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    border-radius: 30px;
+    margin-bottom: 40px;
+    width: 30%;
+    min-height: 450px;
+    padding: 10px;
+    box-shadow: 7px 7px 10px rgba(201, 201, 201);
+   
+}
+
+/* .card div:nth-child(1) > img{
+    width: 100%;
+} */
+
+.image{
+    width: 100%;
+    height: 380px;
+    
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.image > img:hover{
+    scale: 1.1;
+    transition: 0.3s all ease-in;
+}
+
+.image > img{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.cart > img{
+    width: 45px;
+}
+
+.description p:nth-child(1) {
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.description p:nth-child(2) {
+   font-family: "Noto Serif", serif;
+    font-size: 18px;
+    color: rgb(128, 128, 128);
+}
+
+.description p:nth-child(3) {
+   font-family: "Merriweather Sans", sans-serif;
+    font-size: 15px;
+    color: green;
+}
+
+.description p:nth-child(4) {
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+
+
+/* Mobile : 320px - 480px
+Tablets : 481px - 768px
+Laptops : 769px - 1024px
+Desktops : 1025px - 1200px
+Extra large screens : 1201px and above
+Desktop computers : 1920px  */
+
+@media screen and (max-width: 319px) {
+    .card {
+    border-radius: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    min-height: 450px;
+    padding: 10px;
+    box-shadow: 7px 7px 10px rgba(201, 201, 201);
+}
+
+        .store {
+    width: 95%;
+    min-height: 100%;
+    margin: auto;
+}    
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .card {
+   
+     display: flex;
+   
+    border-radius: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    min-height: 250px;
+    padding: 10px;
+    box-shadow: 7px 7px 10px rgba(201, 201, 201);
+}
+
+    .store {
+    width: 90%;
+    min-height: 100%;
+    margin: auto;
+}
+
+    .image {
+    width: 80%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+    .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 10px;
+    padding-top: 5px;
+    height: 180px;
+
+}
+
+    .cart > img {
+    width: 30px;
+    padding-top: 10px;
+}    
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 550px){
+
+    .store {
+    width: 75%;
+    min-height: 100%;
+    margin: auto;
+}
+
+    .card {
+    border-radius: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    min-height: 450px;
+    padding: 10px;
+    box-shadow: 7px 7px 10px rgba(201, 201, 201);
+}
+}
+
+@media screen and (min-width: 551px) and (max-width: 769px){
+
+       .store {
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+}
+
+    .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    width: 45%;
+    height: 300px;
+    padding: 10px;
+    box-shadow: 7px 7px 10px rgba(201, 201, 201);
+}
+
+    .shoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+    .image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    .store {
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+}
+
+    .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    width: 30%;
+    height: 300px;
+    padding: 10px;
+    box-shadow: 7px 7px 10px rgba(201, 201, 201);
+}
+
+    .shoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+    .image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+
+    
+    .store {
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+}
+
+    .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    width: 25%;
+    height: 300px;
+    padding: 10px;
+    box-shadow: 7px 7px 10px rgba(201, 201, 201);
+}
+
+    .shoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+    .image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+}
+
+
+
+
+
+
+
+
